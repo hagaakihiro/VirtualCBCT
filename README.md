@@ -1,20 +1,19 @@
 # VirtualCBCT
 
-This project provides a virtual fan CT system with an elementary information for objects. This is composed of two basic codes,
+This project provides a virtual cone-beam CT (CBCT) system with an elementary information for objects. This is composed of two basic codes,
 
-material based forward projection algorithm (MBFPA),
-Fltered back projection (FBP).
-The former includes the simple beam-hardening correction algorithm as well as the signal noise model.
+material based forward projection algorithm (MBFPA) for CBCT geometry (GPU version),
+Feldkamp-Davis-Kress (FDK) algorithm (CPU version),
 
-Plese cite the following papars for use.
+and high-resolution ICRP 110 phantoms (both male and female).
 
-Ref: Kai-Wen Li, et al., Physical density estimations of single- and dual-energy CT using material-based forward projection algorithm: a simulation study, Br J Radiol, 2021
-Ref: Kai-Wen Li, et al., kV-kV and kV-MV DECT based estimation of proton stopping power ratio - a simulation study, Physica Medica, v89, p182, 2021
-Ref: Daiyu Fujiwara, et al., Virtual computed-tomography system for deep-learning-based material decomposition, Physics in Medicine and Biology, 2022
+These can be used freely, but plese cite the following papars for use.
 
-**GPU version is not free, but can be distributed for some specific GPU boards. Contact us by e-mail. haga@tokushima-u.ac.jp
+Ref: Taisei Shimomura, et al., Virtual cone-beam computed tomography simulator with human phantom library and its application to the elemental material decomposition, Physica Medica, 2023
 
-1: For use of material based forward projection algorithm (MBFPA) code
+If you have a question, contact by e-mail. haga@tokushima-u.ac.jp
+
+#1: For use of material based forward projection algorithm (MBFPA) code
 1-1: Preparation
 Go to "Release_MBFPA_CPU_human/" It is required to prepare an object including the elementary information and an X-ray spectrum before runing the code. The elementary information of the ICRP110 human phantom and the digital Gammex phantom has been uploaded as the examples (Weight_input_ICRU110.raw and Weight_input_gammex.raw), both of which the datatype is the 16-bit unsigned, 512 × 512. For human phantom, six major elements, H, C, N, O, P, and Ca, are included, whereas for Gammex phantom, eight major elements, H, C, N, O, P, Ca, Mg, and Si are included. We provided the creation code of digital Gammex phantom (phantom_creation_Gammex.cpp). The 120 kV and 6 MV X-ray spectra were also provided within "Spectrum/" folder, which are simulated with a radiotherapy machine (ELEKTA Synergy). One can apply any energy spectrum with changing this file (first and second rows mean the first and last points in energy bin, and third row means the fraction for photons).
 
