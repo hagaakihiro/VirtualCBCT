@@ -45,3 +45,14 @@ make
 ex. ./cbct2 txtfile/FDK_36pro_water20cm.txt
 The output image is producted as "36pro_FDK_waterphantom_20cm_short.raw" (the filename should be indicated in the input txt).
 The default datatype of the reconstructed image is a 16-bit short, 270 × 270 (1-mm resolution).
+
+## 3: High resolution human phantom
+### 3-1: Distribution
+Because the spatial resolution in the original ICRP 110 phantoms is relatively low (1.775 × 1.775 × 4.84 mm3 for female and 2.137 × 2.137 × 8.0 mm3 for male), both phantoms were enhanced with the higher resolution of 1.0 × 1.0 × 2.0 mm3.
+These are found as "ICRPphantoms_2mmslice/AF_skin_531x243x838.raw" and "ICRPphantoms_2mmslice/AM_skin_543x271x879". The datatype is a 8-bit. The anatomical ID number is assigned in each voxel as well as the original ICRP phantoms.
+### 3-2: Use for the reprojection
+The elemental images are needed to create the CBCT reprojections using "Release_CBCT_Projection_CM/" code
+(the example format in elemental image is realized with "Release_CBCT_Projection_CM/waterphantom").
+To create such the elemental image data for human phantom, we prepared the program code "To_material_distribution_for512_random.cpp".
+First compile this program, and execute it. Then the six major elements (H, C, N, O, P, and Ca) images are created in AM_MD and AF_MD folders (the corresponding density images are also created in AM_ED and AF_ED folders). 
+
