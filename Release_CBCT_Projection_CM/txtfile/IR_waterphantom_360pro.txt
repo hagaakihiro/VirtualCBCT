@@ -1,0 +1,51 @@
+//////////////////////////////////////////////////////// 
+//
+//    This is info file for CBCT reconstruction 
+//    Do NOT remove this header, blank and comment lines 
+//
+//////////////////////////////////////////////////////// 
+
+// X-ray Energy Spectrum
+Spectrum/result_20220111_average.csv
+
+// total projections scanned
+360
+
+// projection width 
+400
+
+// projection height 
+400
+
+// angle data file 
+360_little_slide.flexmap
+
+// Material density for input
+waterphantom/waterphan_25cm/waterphantom_Weight_input_512x512x6_short
+
+// IC z position(slice number)
+100
+
+// output projection name
+360pro_raytracing_waterphantom
+
+// scale for x, y, z
+0.100000  0.100000  0.100000
+
+// input size (square format) 
+512
+
+// num of slices
+200
+
+// mat_num 
+6
+
+// material type (human, gammex, catphan, etc)
+human
+
+// Factor for density value 100000 or 1000*10 (cm unit)? or 1000
+1000
+
+// prior image shift (-x, -y, -z) (opposite of Couch Shift direction)
+0.0 0.0 0.0

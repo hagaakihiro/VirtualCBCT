@@ -1,0 +1,74 @@
+#define PI	3.141592653589793238462643383279
+
+/*
+//// 360 360 1000:1500
+#define DETECTOR_PITCH_MM_kV		        0.5
+#define DETECTOR_PITCH_MM_AT_ISO_CENT_kV	0.3333333333333
+#define DIST_BTWN_SRC_AND_ISOCENT_MM_kV	    1000.0
+#define DETECTOR_PIXEL_NUM_kV               720
+*/
+/*
+//// 128 128 1000 1500
+
+#define DETECTOR_PITCH_MM_kV		        0.5
+#define DETECTOR_PITCH_MM_AT_ISO_CENT_kV	0.333333333333
+#define DIST_BTWN_SRC_AND_ISOCENT_MM_kV	    1000.0
+#define DETECTOR_PIXEL_NUM_kV               256
+*/
+
+/*
+//// 512 512  CBCToriginal geometry
+
+#define DETECTOR_PITCH_MM_kV		        0.4
+#define DETECTOR_PITCH_MM_AT_ISO_CENT_kV	0.26
+#define DIST_BTWN_SRC_AND_ISOCENT_MM_kV	    1000.0
+#define DETECTOR_PIXEL_NUM_kV               1024
+#define DIST_BTWN_DETECTOR_AND_ISOCENT_MM_kV	    538.0
+*/
+
+/*
+//// 400 400   CBCT geometry MM
+
+#define DETECTOR_PITCH_MM_kV		        0.5
+#define DETECTOR_PITCH_MM_AT_ISO_CENT_kV	0.32509752
+#define DIST_BTWN_SRC_AND_ISOCENT_MM_kV	    1000.0
+#define DETECTOR_PIXEL_NUM_kV               800
+#define DIST_BTWN_DETECTOR_AND_ISOCENT_MM_kV	    538.0
+
+
+#define DETECTOR_PITCH_MM_MV		        0.4
+#define DETECTOR_PITCH_MM_AT_ISO_CENT_MV	0.251485
+#define DIST_BTWN_SRC_AND_ISOCENT_MM_MV	    1000.0
+#define DETECTOR_PIXEL_NUM_MV               1024
+*/
+
+//// 400 400   CBCT geometry CM
+
+#define DETECTOR_PITCH_CM_kV		        0.05
+#define DETECTOR_PITCH_CM_AT_ISO_CENT_kV	0.032509752
+#define DIST_BTWN_SRC_AND_ISOCENT_CM_kV	    100.0
+#define DETECTOR_PIXEL_NUM_kV               800
+#define DIST_BTWN_DETECTOR_AND_ISOCENT_CM_kV	    53.8
+
+
+#define DETECTOR_PITCH_CM_MV		        0.04
+#define DETECTOR_PITCH_CM_AT_ISO_CENT_MV	0.0251485
+#define DIST_BTWN_SRC_AND_ISOCENT_CM_MV	    100.0
+#define DETECTOR_PIXEL_NUM_MV               1024
+
+#define CUTOFF_FREQ	1.60
+#define GAMMA		1.00
+#define ALPHA		0.50
+
+#define MAX_PIXVALUE		65535.0
+//#define AIR_PIXVALUE		0.0
+#define AIR_PIXVALUE		10000.0
+#define MAX_AIR_PIXDIFF	(MAX_PIXVALUE-AIR_PIXVALUE)
+
+#define SHOW_OK	fprintf(stderr,"OK\n");
+
+#define Rho_e_H2O   3.343
+#define Avogadro    6.0221
+
+
+
