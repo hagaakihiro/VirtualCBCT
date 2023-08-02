@@ -1,0 +1,66 @@
+//////////////////////////////////////////////////////// 
+//
+//    This is info file for CBCT reconstruction 
+//    Do NOT remove this header, blank and comment lines 
+//
+//////////////////////////////////////////////////////// 
+
+// X-ray Energy Spectrum
+kV
+
+// total projections scanned
+360
+
+// projection width 
+400
+
+// projection height 
+400
+
+// projection image file header bytes, 100 for Elekta XVI (not use in vCBCT)
+0
+
+// projection image data directory for input 
+../Release_CBCT_Projection_CM/360pro_raytracing_waterphantom
+
+// projection image file number digits (0-filled) for Elekta XVI ver.4 (not use in vCBCT)
+8
+
+// first projection image file number in HEX  for Elekta XVI ver.4 (not use in vCBCT)
+hore
+
+// projection image file extension 
+raw
+
+// angle data file 
+360_littele_slide.flexmap
+
+// reconstruction size (square format)  
+270
+
+// reconstruction target class string (used for gating, etc.) 
+*
+
+// reconstruction start z [cm]
+-5
+
+// reconstruction z step[cm]
+0.1
+
+/// reconstruction slices 
+100
+
+// reconstruction size factor [cm]
+0.100000
+
+// Factor for output CT value  100000 or 10000 or 1000 or 1
+1000
+
+// reconstructed data file for output 
+FDK_360pro_water25cm.raw
+
+// Prior reconstruction image slices  
+240
+
+//prior image shift (-x, -y, -z) (opposite of Couch Shift direction) 
+0.0 0.0 0.0 
