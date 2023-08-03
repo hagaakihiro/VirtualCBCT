@@ -34,13 +34,15 @@ main(int argc, char* argv[])
     if(igender == 0)
     {
         //char *str2 = "AM_rescale_512x512_222_mod.raw";
-        char *str2 = "AM_skin_543x271x879.raw";
+        //char *str2 = "AM_skin_543x271x879.raw";
+        char *str2 = "AM_skin_543x271_700_800.raw";
         sprintf(filename, "%s", str2);
     }
     else
     {
         //char *str2 = "AF_rescale_512x512_348_mod.raw";
-        char *str2 = "AF_skin_531x243x838.raw";
+        //char *str2 = "AF_skin_531x243x838.raw";
+        char *str2 = "AF_skin_531x243_700_800.raw";
         sprintf(filename, "%s", str2);
     }
     
