@@ -57,11 +57,13 @@ main(int argc, char* argv[])
     // for Male
     int ncol_M=543;
     int nrow_M=271;
-    int nsli_M=879;
+    //int nsli_M=879;
+    int nsli_M=100;
     // for Female
     int ncol_F=531;
     int nrow_F=243;
-    int nsli_F=838;
+    //int nsli_F=838;
+    int nsli_F=100;
     
     short  *outputimg0, *outputimg2;
     unsigned char *outputimg1;
