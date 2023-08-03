@@ -15,8 +15,8 @@ If you have a question, contact by e-mail. haga@tokushima-u.ac.jp
 
 ## 1: For use of material based forward projection algorithm (MBFPA) code
 ### 1-1: Preparation
-Go to "Release_CBCT_Projection_CM/" It is required to prepare an object including the elementary information and an X-ray spectrum before runing the code. In this project, the elemental image of the cylindrical water phantoms with 20 cm and 25 cm diameters has been uploaded as the examples (waterphantom/waterphan_20cm and waterphantom/waterphan_25cm, both of which the datatype is the 16-bit unsigned, 512 × 512 x 200). Six elements, H, C, N, O, P, and Ca, are included, but H and O are used for water phantom as well as N for Air.
-Only 100 kV spectrum is provided as "Spectrum/result_20220111_average.csv", which is the estimated spectrum in ELEKTA Synergy. One can apply any energy spectrum by modifying this file (first and second rows mean the first and last points in energy bin, and third row means the fraction for photons).
+Go to "Release_CBCT_Projection_CM/" It is required to prepare an object including the elementary information and an X-ray spectrum before runing the code. In this project, the elemental image of the cylindrical water phantoms with 20 cm and 25 cm diameters has been uploaded as the examples (waterphantom/waterphan_20cm and waterphantom/waterphan_25cm, both of which the datatype is the 16-bit unsigned, 512 × 512). Six elements, H, C, N, O, P, and Ca, are included, but H and O only are used for water phantom as well as N for Air.
+A 100 kV spectrum is provided in "Spectrum/result_20220111_average.csv", which is the estimated spectrum in ELEKTA Synergy. One can apply any energy spectrum by modifying this file (first and second rows mean the first and last points in energy bin, and third row means the fraction for photons).
 
 The information of the object and the spectrum must be indicated in the input txt file.
 Two templates of the input file were distributed in "txtfile/" folder
@@ -29,8 +29,8 @@ Prepare elementary density image and incident X-ray spectrum as described above.
 "make" produces the execute file "proj.exe". Then, execute
 ./proj.exe [input.txt]
 ex. ./proj.exe txtfile/FDK_36pro_water20cm.txt
-This products the reprojection data (the filename is defined in input file).
-The datatype of the projection image is a 32-bit real, 400 × 400 (1 mm resolution) in the default geometory.
+This products the reprojection data (the output filename is defined in input file).
+The datatype of the projection image is a 32-bit real, 400 × 400 (1-mm resolution) in the default geometory.
 
 
 ## 2: For use of FDK reconstruction code
@@ -44,7 +44,7 @@ make
 ./cbct2 [input.txt]
 ex. ./cbct2 txtfile/FDK_36pro_water20cm.txt
 The output image is producted as "36pro_FDK_waterphantom_20cm_short.raw" (the filename should be indicated in the input txt).
-The default datatype of the reconstructed image is a 16-bit short, 270 × 270 (1-mm resolution).
+The default datatype of the reconstructed image is a 16-bit short (factored by 1000), 270 × 270 (1-mm resolution).
 
 ## 3: High resolution human phantom
 ### 3-1: Distribution
