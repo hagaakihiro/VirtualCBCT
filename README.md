@@ -49,7 +49,7 @@ The default datatype of the reconstructed image is a 16-bit short, 270 × 270 (1
 ## 3: High resolution human phantom
 ### 3-1: Distribution
 Because the spatial resolution in the original ICRP 110 phantoms is relatively low (1.775 × 1.775 × 4.84 mm$^3$ for female and 2.137 × 2.137 × 8.0 mm$^3$ for male), both phantoms were enhanced with the higher resolution of 1.0 × 1.0 × 2.0 mm$^3$.
-These are found as "ICRPphantoms_2mmslice/AF_wholebody_531x243_***_***.raw" and "ICRPphantoms_2mmslice/AM_wholebody_543x271_***_***.raw", where we divided as 9 parts of the whole body, because of the file size limitation in github. The datatype is a 8-bit. The anatomical ID number is assigned in each voxel as well as the original ICRP phantoms. One can marge the files to handle with them as the single human phantom.
+These are found as "ICRPphantoms_2mmslice/AF_wholebody_531x243_aaa_bbb.raw" and "ICRPphantoms_2mmslice/AM_wholebody_543x271_aaa_bbb.raw", where we divided as 9 parts of the whole body, because of the file size limitation in github. The datatype is a 8-bit. The anatomical ID number is assigned in each voxel as well as the original ICRP phantoms. One can marge the files to handle with them as the single human phantom.
 ### 3-2: Use for the reprojection
 The elemental images are needed to create the CBCT reprojections using "Release_CBCT_Projection_CM/" code
 (the example format in elemental image can be realized with "waterphantom").
