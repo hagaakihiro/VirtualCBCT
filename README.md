@@ -7,7 +7,7 @@ Feldkamp-Davis-Kress (FDK) algorithm (CPU version),
 
 and high-resolution ICRP 110 phantoms (both male and female).
 
-These can be used freely, but plese cite the following papars for use.
+These can be used freely, but plese cite the following papar for use.
 
 Ref: Taisei Shimomura, et al., Virtual cone-beam computed tomography simulator with human phantom library and its application to the elemental material decomposition, Physica Medica, 2023
 
