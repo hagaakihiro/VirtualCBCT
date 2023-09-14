@@ -6,6 +6,7 @@ material based forward projection algorithm (MBFPA) for CBCT geometry (GPU versi
 Feldkamp-Davis-Kress (FDK) algorithm (CPU version),
 
 and high-resolution ICRP 110 phantoms (both male and female).
+The scattered X-ray simulation with Unet model will also be shared soon.
 
 These can be used freely, but plese cite the following papar for use.
 
