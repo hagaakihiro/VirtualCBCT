@@ -2,7 +2,7 @@
 
 This project provides a virtual cone-beam CT (CBCT) system with an elementary information for objects. This is composed of two basic codes,
 
-material based forward projection algorithm (MBFPA) for CBCT geometry (GPU version),//
+material based forward projection algorithm (MBFPA) for CBCT geometry (GPU version),  
 Feldkamp-Davis-Kress (FDK) algorithm (CPU version),
 
 and high-resolution ICRP 110 phantoms (both male and female).
